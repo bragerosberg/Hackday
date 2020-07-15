@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const fetch = require('node-fetch');
 
 /* GET home listing. */
-router.get('/home', function(req, res, next) {
+router.get('/home', async(req, res, next) => {
   res.json([]);
 });
 
