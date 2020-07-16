@@ -8,7 +8,6 @@ import Weather from './components/Weather';
 
 class App extends React.Component {
   state = { users: [] };
-
   render () {
     return (
       <BrowserRouter>
