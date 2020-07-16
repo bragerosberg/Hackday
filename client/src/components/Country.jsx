@@ -4,10 +4,6 @@ import '../styles/loader.css';
 class Country extends React.Component {
   state = { countries: [{
     name: undefined,
-    capital: undefined,
-    demonym: undefined,
-    population: undefined,
-    relevance: undefined,
     }]
   };
 
