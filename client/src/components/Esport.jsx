@@ -29,15 +29,28 @@ class Esport extends React.Component {
         <h1 className="rendered__header">E-sport Page</h1>
         <main className="match">
           <section className="opponent__one">
-            <p>{esport.opponents[0].opponent.name}</p>
             <img className="opponent__one__logo" src={esport.opponents[0].opponent.image_url} alt="opponent_one" />
+            <p className="opponent__one__name">{esport.opponents[0].opponent.name} ({esport.opponents[0].opponent.location})</p>
+            <p className="opponent__one__id">ID: {esport.opponents[0].opponent.id}</p>
           </section>
 
           <section className="opponent__two">
-            <p>{esport.opponents[1].opponent.name}</p>
             <img className="opponent__two__logo" src={esport.opponents[1].opponent.image_url} alt="opponent_two" />
+            <p className="opponent__two__name">{esport.opponents[1].opponent.name} ({esport.opponents[1].opponent.location})</p>
+            <p className="opponent__two__id">ID: {esport.opponents[1].opponent.id}</p>
           </section>
+
         </main>
+        <article className="match__result">
+          <p className="match__title">{esport.name}</p>
+          <p className="match__maps--amount">Best of: {esport.number_of_games}</p>
+          <p className="match__tournament--prizepool">A prizepool of {esport.tournament.prizepool}</p>
+          <ul className="match__maps--scores">
+            <p>Winner of each map</p>
+            {esport.games.map(game => 
+              <li key={game.id}>{game.winner.id}</li>)}
+          </ul>
+        </article>
       </>
     )
   }

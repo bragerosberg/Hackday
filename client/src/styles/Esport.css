@@ -3,3 +3,27 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.match__result {
+  text-align: center;
+}
+
+.match__result ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.match img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.opponent__one {
+  text-align: center;
+}
+
+.opponent__two {
+  text-align: center;
+}
+
