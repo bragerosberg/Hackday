@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../styles/loader.css';
 import '../styles/Esport.css';
 
@@ -51,7 +52,6 @@ class Esport extends React.Component {
               {esport.games.map(game => 
                 <li key={game.id}>{game.winner.id}</li>)}
             </ul>
-
           </article>
 
           <section className="opponent__two">
