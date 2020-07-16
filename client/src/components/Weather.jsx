@@ -27,13 +27,18 @@ class Weather extends React.Component {
       }
       return (
         <>
-          <h1 className="rendered__header">Weather Page</h1>
+          <section className="header__wrapper">
+            <h1 className="rendered__header">Weather Page</h1>
+            <p className="rendered__subheader">An updating forecast for {weather.name}:</p>
+          </section>
           <main className="weather__info">
-            <p>The temperature in {weather.name} is currently {weather.main.temp}°C</p>
-            <p>Feels like {weather.main.feels_like}°C</p>
-            <p>The weather may wary between {weather.main.temp_min}°C and {weather.main.temp_max}°C</p>
-            <p>Weather: {weather.weather[0].main}</p>
-            <p>Weather description: {weather.weather[0].description}</p>
+            <ul>
+              <li>Temperature: {weather.main.temp}°C</li>
+              <li>Feels Like: {weather.main.feels_like}°C</li>
+              <li>May vary between: {weather.main.temp_min}°C and {weather.main.temp_max}°C</li>
+              <li>Weather: {weather.weather[0].main}</li>
+              <li>Weather description: {weather.weather[0].description}</li>
+            </ul>
           </main>
         </>
       );

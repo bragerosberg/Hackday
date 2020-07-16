@@ -4,13 +4,19 @@ html {
 
 .loader__wrapper,
 .loading__header,
-.rendered__header,
-.esport__game {
+.rendered__header {
   margin-top: 1em;
   color: #fff5aa;
 }
+.esport__game {
+  color: #aa9d39;
+}
 .esport__wrapper {
   text-align: center;
+}
+
+.match__tournament {
+  padding-bottom: 15em;
 }
 
 .match {
@@ -20,7 +26,7 @@ html {
 }
 
 .match__result {
-  color: #fff5aa;
+  color: #eef8a6;
 }
 
 .match__result ul{

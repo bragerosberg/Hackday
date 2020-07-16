@@ -1,3 +1,24 @@
 .weather__info {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+.rendered__header {
+  font-size: 2em;
+}
+
+.rendered__subheader {
   text-align: center;
+  margin: 0;
+  color: #a171a7;
+  font-size: 1.5em;
+}
+
+.header__wrapper {
+  margin-bottom: 3em;
+}
+
+.weather__info li {
+  padding: 1em;
+  font-size: 1.2em;
 }

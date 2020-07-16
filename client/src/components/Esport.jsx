@@ -38,10 +38,13 @@ class Esport extends React.Component {
           </section>
           
           <article className="match__result">
-            <p className="match__title">{esport.name}</p>
-            <p className="match__tournament--prizepool">A prizepool of {esport.tournament.prizepool}</p>
+            <section className="match__tournament">
+              <p className="match__tournament__title">{esport.name}</p>
+              <p className="match__tournament--prizepool">A prizepool of {esport.tournament.prizepool}</p>
+              <p className="match__maps--amount">Best of: {esport.number_of_games}</p>
+            </section>
+
             <p className="match__winner__name">Winner = {esport.winner.name}</p>
-            <p className="match__maps--amount">Best of: {esport.number_of_games}</p>
 
             <ul className="match__maps--scores">
               <p>Winner of map</p>
