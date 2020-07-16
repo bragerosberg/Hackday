@@ -4,6 +4,7 @@ import Country from './components/Country';
 import Esport from './components/Esport';
 import Home from './components/Home';
 import Weather from './components/Weather';
+import './styles/App.css';
 
 
 class App extends React.Component {
@@ -12,7 +13,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div>
-          <nav>
+          <nav className="navbar__routes">
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/weather">Weather</Link></li>

@@ -1,0 +1,18 @@
+.navbar__routes ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.navbar__routes a{
+  text-decoration: none;
+  color: coral;
+  font-weight: 800;
+}
+
+.navbar__routes a:hover{
+  text-decoration: none;
+  color: rgb(228, 57, 228);
+  font-weight: 800;
+}

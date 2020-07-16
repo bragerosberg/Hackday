@@ -53,3 +53,15 @@
     transform: translate(24px, 0);
   }
 }
+
+.loader__wrapper {
+  text-align: center;
+}
+
+.loading__header {
+  text-align: center;
+}
+
+.rendered__header {
+  text-align: center;
+}
