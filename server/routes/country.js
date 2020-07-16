@@ -10,11 +10,9 @@ router.get('/country', async (req, res, next) => {
 	"headers": {
 		"x-rapidapi-host": "restcountries-v1.p.rapidapi.com",
 		"x-rapidapi-key": `${process.env.COUNTRY_KEY}`
-	}
-  })
-  .then(res => res.json())
-  .catch(err => {console.log(err);});
-
+	}})
+    .then(res => res.json())
+    .catch(err => {console.log(err);});
   res.json(data);
 });
 
