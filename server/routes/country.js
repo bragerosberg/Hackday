@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
+require('dotenv').config();
 
 /* GET country listing. */
 router.get('/country', async (req, res, next) => {
@@ -8,7 +9,7 @@ router.get('/country', async (req, res, next) => {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "restcountries-v1.p.rapidapi.com",
-		"x-rapidapi-key": "a3e3add3c0msh39eb6d86a4931fap156c03jsn6542d146dc91"
+		"x-rapidapi-key": `${process.env.COUNTRY_KEY}`
 	}
   })
   .then(res => res.json())

@@ -9,7 +9,7 @@ router.get('/esport', async (req, res, next) => {
   //   .catch(err => {console.log(err);});
   
   //   res.json([data]);
-  res.json([]);
+  res.json({id: 1337, team: "cloud9"});
 });
 
 module.exports = router;
