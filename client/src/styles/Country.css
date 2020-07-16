@@ -1,3 +1,15 @@
-.country__info {
+.country__wrapper h2 {
   text-align: center;
+  color: #a171a7;
+}
+
+.country__info {
+  display: flex;
+  flex: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.country__info p {
+  color: whitesmoke;
 }
