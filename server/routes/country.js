@@ -14,7 +14,7 @@ router.get('/country', async (req, res, next) => {
   .then(res => res.json())
   .catch(err => {console.log(err);});
 
-  res.json([data]);
+  res.json(data);
 });
 
 module.exports = router;
