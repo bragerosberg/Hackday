@@ -18,10 +18,11 @@ class Country extends React.Component {
     const country = this.state.countries[0];
     if(country.name === undefined) {
       return (
-        <div className="loader__wrapper">
-          <h1>Country Page</h1>
+        <main className="loader__wrapper">
+          <h1 className="loading__header">Country Page</h1>
           <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> {/* CSS loader */}
-        </div>
+          <p>If you experience a long load-time, please make sure the server is running</p>
+        </main>
       )
     }
     return (

@@ -18,8 +18,9 @@ class Esport extends React.Component {
     if (esport.tournament_id === undefined) {
       return (
         <div className="loader__wrapper">
-          <h1>E-sport Page</h1>
+          <h1 className="loading__header">E-sport Page</h1>
           <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> {/* CSS loader */}
+          <p>If you experience a long load-time, please make sure the server is running</p>
         </div>
       )
     }
