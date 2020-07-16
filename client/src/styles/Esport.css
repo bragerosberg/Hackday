@@ -1,3 +1,18 @@
+html {
+  background-color: #310138;
+}
+
+.loader__wrapper,
+.loading__header,
+.rendered__header,
+.esport__game {
+  margin-top: 1em;
+  color: #fff5aa;
+}
+.esport__wrapper {
+  text-align: center;
+}
+
 .match {
   display: flex;
   flex-wrap: wrap;
@@ -5,25 +20,25 @@
 }
 
 .match__result {
-  text-align: center;
+  color: #fff5aa;
 }
 
 .match__result ul{
   list-style-type: none;
   padding: 0;
+  font-size: 0.8em;
 }
 
 .match img {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
+  width: 200px;
 }
 
-.opponent__one {
+.opponent__one,
+.opponent__two {
   text-align: center;
+  color: #fff5aa;
 }
 
 .opponent__two {
   text-align: center;
 }
-

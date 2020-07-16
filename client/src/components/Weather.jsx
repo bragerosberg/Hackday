@@ -33,7 +33,7 @@ class Weather extends React.Component {
             <p>Feels like {weather.main.feels_like}°C</p>
             <p>The weather may wary between {weather.main.temp_min}°C and {weather.main.temp_max}°C</p>
             <p>Weather: {weather.weather[0].main}</p>
-            <p>Weather: {weather.weather[0].description}</p>
+            <p>Weather description: {weather.weather[0].description}</p>
           </main>
         </>
       );

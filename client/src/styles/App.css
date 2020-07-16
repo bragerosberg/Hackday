@@ -1,18 +1,26 @@
+.navbar__routes {
+  background-color: #482e74;
+  padding: 1em;
+}
+
 .navbar__routes ul{
   display: flex;
   flex-wrap: wrap;
+ 
   justify-content: space-evenly;
   list-style-type: none;
   text-transform: uppercase;
+  margin: 0;
+}
+.navbar__routes a,
+.navbar__routes a:hover {
+  text-decoration: none;
+  font-weight: 800;
 }
 .navbar__routes a{
-  text-decoration: none;
-  color: coral;
-  font-weight: 800;
+  color: #8d79ae;
 }
 
 .navbar__routes a:hover{
-  text-decoration: none;
-  color: rgb(228, 57, 228);
-  font-weight: 800;
+  color: #fff5aa;
 }

@@ -11,7 +11,7 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: coral;
+  background: #d4c96a;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
@@ -55,15 +55,13 @@
   }
 }
 
-.loader__wrapper {
+.loader__wrapper,
+.loading__header,
+.rendered__header {
   text-align: center;
+  margin: 0;
 }
 
 .loading__header {
-  text-align: center;
   margin-bottom: 15%;
-}
-
-.rendered__header {
-  text-align: center;
 }
