@@ -1,4 +1,4 @@
-# Hackday
+# Hackday- One Day Project
 ## Want to try out the project?
 * Clone this repo
 * Install dependecies
