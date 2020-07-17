@@ -17,7 +17,7 @@ class Home extends React.Component {
         <h1 className="rendered__header">Home page</h1>
         <section className="information">
           <section className="information__introduction">
-            <h2>Background</h2>
+            <h2>About the project</h2>
             <p>Hackday project consisting of a CRA-frontend, with express backend.</p>
             <p>Using APIs I have been curious to test out, therefore wide difference.</p>
           </section>
