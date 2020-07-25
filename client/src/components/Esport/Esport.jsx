@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../styles/loader.css';
 import './Esport.css';
 
-const Esport = () => {
+export default () => {
   const [esport, setEsport] = useState();
   const [fetchComplete, setFetchStatus] = useState(false);
 
@@ -10,8 +10,8 @@ const Esport = () => {
     fetch('/esport')
       .then(res => res.json())
       .then(data => {
-        setEsport(data[0])
-        setFetchStatus(true)
+        setEsport(data[0]);
+        setFetchStatus(true);
       })
   }, []);
 
@@ -61,6 +61,3 @@ const Esport = () => {
       </div>
     )
 }
-
-
-export default Esport;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/loader.css';
 import './Country.css';
 
-const Country = () => {
+export default () => {
   const [countries, setCountries] = useState();
   const [fetchComplete, setFetchStatus] = useState(false);
 
@@ -54,5 +54,3 @@ const Country = () => {
     </main>
   );
 }
-
-export default Country;
