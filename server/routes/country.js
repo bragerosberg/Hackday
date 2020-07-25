@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 /* GET country listing. */
-router.get('/country', async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   const data = await fetch("https://restcountries-v1.p.rapidapi.com/name/norge", {
 	"method": "GET",
 	"headers": {
