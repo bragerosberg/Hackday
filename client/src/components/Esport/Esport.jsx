@@ -1,7 +1,6 @@
 import React from 'react';
-
-import '../styles/loader.css';
-import '../styles/Esport.css';
+import '../../styles/loader.css';
+import './Esport.css';
 
 class Esport extends React.Component {
   state = { esport: [{

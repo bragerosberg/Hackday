@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/loader.css';
-import '../styles/Country.css';
+import '../../styles/loader.css';
+import './Country.css';
 
 class Country extends React.Component {
   state = { countries: [{

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Home.css';
-const apiList = require('./apiList');
+import './Home.css';
+const apiList = require('../apiList');
 
 class Home extends React.Component {
   state = { home: [] };

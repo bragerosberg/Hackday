@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import Country from './components/Country';
-import Esport from './components/Esport';
-import Home from './components/Home';
-import Weather from './components/Weather';
+import Country from './components/Country/Country';
+import Esport from './components/Esport/Esport';
+import Home from './components/Home/Home';
+import Weather from './components/Weather/Weather';
 import './styles/App.css';
 
 

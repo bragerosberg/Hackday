@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/loader.css';
-import '../styles/Weather.css';
+import '../../styles/loader.css';
+import './Weather.css';
 
 class Weather extends React.Component {
   state = { weather: [{
@@ -33,9 +33,9 @@ class Weather extends React.Component {
           </section>
           <main className="weather__info">
             <ul>
-              <li>Temperature: {weather.main.temp}°C</li>
-              <li>Feels Like: {weather.main.feels_like}°C</li>
-              <li>May vary between: {weather.main.temp_min}°C and {weather.main.temp_max}°C</li>
+              <li>Temperature: {Math.round(weather.main.temp * 10) / 10}°C</li>
+              <li>Feels Like: {Math.round(weather.main.feels_like * 10) / 10}°C</li>
+              <li>May vary between: {Math.round(weather.main.temp_min * 10) / 10}°C and {Math.round(weather.main.temp_max * 10) / 10}°C</li>
               <li>Weather: {weather.weather[0].main}</li>
               <li>Weather description: {weather.weather[0].description}</li>
             </ul>
