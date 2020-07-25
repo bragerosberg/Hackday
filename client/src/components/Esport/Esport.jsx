@@ -1,30 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../styles/loader.css';
 import './Esport.css';
 
-class Esport extends React.Component {
-  state = { esport: [{
-    tournament_id: undefined,
-  }]};
+const Esport = () => {
+  const [esport, setEsport] = useState();
+  const [fetchComplete, setFetchStatus] = useState(false);
 
-  componentDidMount() {
+  useEffect(() => {
     fetch('/esport')
       .then(res => res.json())
-      .then(esport => this.setState({esport}));
-    }
+      .then(data => {
+        setEsport(data[0])
+        setFetchStatus(true)
+      })
+  }, []);
 
-  render () {
-    const esport = this.state.esport[0];
-    if (esport.tournament_id === undefined) {
-      return (
-        <div className="loader__wrapper">
-          <h1 className="loading__header">E-sport Page</h1>
-          <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> {/* CSS loader */}
-          <p>If you experience a long load-time, please make sure the server is running</p>
-        </div>
-      )
-    }
-    return (
+  return !fetchComplete ?
+    (
+      <div className="loader__wrapper">
+        <h1 className="loading__header">E-sport Page</h1>
+        <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> {/* CSS loader */}
+        <p>If you experience a long load-time, please make sure the server is running</p>
+      </div>
+    ) : (
       <div className="esport__wrapper">
         <h1 className="rendered__header">E-sport Page</h1>
         <h3 className="esport__game">{esport.videogame.name}</h3>
@@ -62,7 +60,7 @@ class Esport extends React.Component {
         </main>
       </div>
     )
-  }
 }
+
 
 export default Esport;
