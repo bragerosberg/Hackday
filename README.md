@@ -32,7 +32,7 @@ Hackday through the bootcamp at salt. I often come up with ideas and find new te
 - Experiment with the APIs and how I would use them in individual projects further
 
 # Design 
-This section will be filled out sortly.
+This section will be filled out shortly.
 
 
 # Full Description
