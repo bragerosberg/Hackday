@@ -32,7 +32,15 @@ Hackday through the bootcamp at salt. I often come up with ideas and find new te
 - Experiment with the APIs and how I would use them in individual projects further
 
 # Design 
-This section will be filled out shortly.
+Since part of the goal under this 24-hackday was to build a scalable product for myself which I could branch out in different paths and develop further in the future I wanted to keep it a simple MPA. The colors I chose was experimental, and I wanted to build something that had a UI one would remember, with bright and unusual colors - rather than keeping the more common simple/professional light colors theme. 
+
+The usage of APIs may cause different and unexpected loading times, and to keep the user in consideration and to make sure to respond properly, I added a CSS-loader to indicate that the user request was recieved, and to show that is being processed. See photo below.
+
+### Illustrations of Design
+<p align="center">
+ <img src="https://i.imgur.com/pseObF0.png" height="600px" />
+ <img src="https://i.imgur.com/0GAJlXq.png" width="800px" />
+</p>
 
 
 # Full Description
