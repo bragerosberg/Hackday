@@ -6,7 +6,7 @@ require('dotenv').config();
 
 /* GET esport listing. */
 router.get('/', async (req, res, next) => {
-  const data = await fetch(`https://api.pandascore.co/csgo/matches?token=${process.env.ESPORT_KEY}&filter[id]=551926`)
+  const data = await fetch(`https://api.covid19api.com/summary`)
     .then(res => res.json())
     .catch(err => {console.log(err);});
   
