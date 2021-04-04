@@ -5,11 +5,11 @@ require('dotenv').config();
 
 
 /* GET esport listing. */
-router.get('/', async (req, res, next) => {
+router.get('/', async (_, res) => {
   const data = await fetch(`https://api.covid19api.com/summary`)
     .then(res => res.json())
     .catch(err => {console.log(err);});
-  
+
     res.json(data);
 });
 

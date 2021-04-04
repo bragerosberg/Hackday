@@ -3,7 +3,7 @@ const router = express.Router();
 const fetch = require('node-fetch');
 
 /* GET home page. */
-router.get('/', async(req, res, next) => {
+router.get('/', async(_, res) => {
   res.render('index', { title: 'Express' });
 });
 

@@ -10,12 +10,12 @@ export default () => {
     fetch('/esport')
       .then(res => res.json())
       .then(data => {
-        setEsport(data.Countries);
+        setEsport(data.Countries[Math.floor(Math.random() * data.Countries.length)])
         setFetchStatus(true);
       })
   }, []);
 
-  if (fetchComplete)console.log(esport[47]);
+  const { Country, CountryCode, NewConfirmed, TotalConfirmed } = fetchComplete ? esport : '';
 
   return !fetchComplete ?
     (
@@ -26,7 +26,9 @@ export default () => {
       </div>
     ) : (
       <div className="esport__wrapper">
-        <p style={{color: "white"}}>Total confirmed {esport[47].TotalConfirmed}</p>
+        <p style={{color: "white"}}>Country: {Country}, {CountryCode}</p>
+        <p style={{color: "white"}}>Total confirmed {TotalConfirmed}</p>
+        <p style={{color: "white"}}>New confirmed {NewConfirmed}</p>
       </div>
     )
 }
